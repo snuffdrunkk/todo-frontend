@@ -1,5 +1,5 @@
 import {StyleSheet, View} from 'react-native';
-import {Box, Text} from "./util/theme";
+import {Box, Text} from "../utils/theme";
 
 const Button = () => {
   return (
