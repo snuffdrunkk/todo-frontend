@@ -1,14 +1,15 @@
 import {Box, Text} from '../../utils/theme';
+import React from "react";
 import SafeAreaWrapper from "../../components/shared/safe-area-wrapper";
 
-const HomeScreen = () => {
+const EditTaskScreen = () => {
     return (
         <SafeAreaWrapper>
             <Box>
-                <Text>Home</Text>
+                <Text>Edit task</Text>
             </Box>
         </SafeAreaWrapper>
     );
 };
 
-export default HomeScreen;
+export default EditTaskScreen;

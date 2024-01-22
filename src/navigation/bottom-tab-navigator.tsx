@@ -1,13 +1,60 @@
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {RootBottomTabParamList} from "./types";
-import HomeScreen from "../screens/home-screen";
-
+import CompletedScreen from "../screens/completed-screen";
+import TodayScreen from "../screens/today-screen";
+import CategoriesScreen from "../screens/categories-screen";
+import CategoriesStackNavigator from "./categories-stack-navigator";
+import HomeStackNavigator from "./home-stack-navigator";
+import {useTheme} from "@react-navigation/native";
+import Icons from "../components/shared/icons";
 const Tab = createBottomTabNavigator<RootBottomTabParamList>()
 
 const BottomTabNavigator = () => {
+    const theme = useTheme()
     return (
-        <Tab.Navigator>
-            <Tab.Screen name={"HomeStack"} component={HomeScreen}/>
+        <Tab.Navigator
+            screenOptions={{
+                tabBarActiveTintColor: "black",
+                tabBarInactiveTintColor: "theme.colors.gray550",
+                tabBarHideOnKeyboard: true,
+            }}>
+            <Tab.Screen
+                name={"HomeStack"}
+                component={HomeStackNavigator}
+                options={()=>({
+                    title:"Home",
+                    tabBarIcon: ({color}) => <Icons name="home" color={color}/>,
+                    headerShown: false,
+                })}
+            />
+            <Tab.Screen
+                name={"Completed"}
+                component={CompletedScreen}
+                options={()=>({
+                    title:"Completed",
+                    tabBarIcon: ({color}) => <Icons name="completed" color={color}/>,
+                    headerShown: false,
+            })}
+            />
+
+            <Tab.Screen
+                name={"Today"}
+                component={TodayScreen}
+                options={()=>({
+                    title:"Today",
+                    tabBarIcon: ({color}) => <Icons name="calendar" color={color}/>,
+                    headerShown: false,
+            })}
+            />
+            <Tab.Screen
+                name={"CategoriesStack"}
+                component={CategoriesStackNavigator}
+                options={()=>({
+                    title:"Categories",
+                    tabBarIcon: ({color}) => <Icons name="categories" color={color}/>,
+                    headerShown: false,
+            })}
+            />
         </Tab.Navigator>
     );
 };
