@@ -1,12 +1,12 @@
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {BottomTabBar, createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {RootBottomTabParamList} from "./types";
 import CompletedScreen from "../screens/completed-screen";
 import TodayScreen from "../screens/today-screen";
-import CategoriesScreen from "../screens/categories-screen";
 import CategoriesStackNavigator from "./categories-stack-navigator";
 import HomeStackNavigator from "./home-stack-navigator";
-import {useTheme} from "@react-navigation/native";
 import Icons from "../components/shared/icons";
+import {useTheme} from "@shopify/restyle";
+
 const Tab = createBottomTabNavigator<RootBottomTabParamList>()
 
 const BottomTabNavigator = () => {
@@ -15,14 +15,15 @@ const BottomTabNavigator = () => {
         <Tab.Navigator
             screenOptions={{
                 tabBarActiveTintColor: "black",
-                tabBarInactiveTintColor: "theme.colors.gray550",
+                tabBarInactiveTintColor: theme.colors.gray550,
                 tabBarHideOnKeyboard: true,
-            }}>
+            }}
+        >
             <Tab.Screen
                 name={"HomeStack"}
                 component={HomeStackNavigator}
-                options={()=>({
-                    title:"Home",
+                options={() => ({
+                    title: "Home",
                     tabBarIcon: ({color}) => <Icons name="home" color={color}/>,
                     headerShown: false,
                 })}
@@ -30,30 +31,30 @@ const BottomTabNavigator = () => {
             <Tab.Screen
                 name={"Completed"}
                 component={CompletedScreen}
-                options={()=>({
-                    title:"Completed",
+                options={() => ({
+                    title: "Completed",
                     tabBarIcon: ({color}) => <Icons name="completed" color={color}/>,
                     headerShown: false,
-            })}
+                })}
             />
 
             <Tab.Screen
                 name={"Today"}
                 component={TodayScreen}
-                options={()=>({
-                    title:"Today",
+                options={() => ({
+                    title: "Today",
                     tabBarIcon: ({color}) => <Icons name="calendar" color={color}/>,
                     headerShown: false,
-            })}
+                })}
             />
             <Tab.Screen
                 name={"CategoriesStack"}
                 component={CategoriesStackNavigator}
-                options={()=>({
-                    title:"Categories",
+                options={() => ({
+                    title: "Categories",
                     tabBarIcon: ({color}) => <Icons name="categories" color={color}/>,
                     headerShown: false,
-            })}
+                })}
             />
         </Tab.Navigator>
     );
