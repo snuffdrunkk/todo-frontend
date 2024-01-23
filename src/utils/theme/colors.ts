@@ -1,12 +1,17 @@
 export const palette = {
     white: "#ffffff",
-    primary: "#007aff",
+    primary: "rgba(42,135,236,0.91)",
+    lightGray: "#EDECEF",
     gray550: "#939292",
     gray650: "#8a8a8a",
     gray4: "#898681",
+    gray5: "#887d8e",
     gray9: "#101928",
+    gray8: "#29262E",
     transparent: "transparent",
     grey: "#878787",
+
+    /**tailwind colors */
 
     slate50: "#f8fafc",
     slate100: "#f1f5f9",
@@ -18,6 +23,7 @@ export const palette = {
     slate700: "#334155",
     slate800: "#1e293b",
     slate900: "#0f172a",
+    // gray
 
     gray50: "#f9fafb",
     gray100: "#f3f4f6",
@@ -31,6 +37,7 @@ export const palette = {
     gray800: "#1f2937",
     gray900: "#111827",
 
+    // zinc
     zinc50: "#fafafa",
     zinc100: "#f4f4f5",
     zinc200: "#e4e4e7",
@@ -43,6 +50,8 @@ export const palette = {
     zinc800: "#27272a",
     zinc900: "#18181b",
 
+    // neutrals
+
     neutral50: "#fafafa",
     neutral100: "#f5f5f5",
     neutral200: "#e5e5e5",
@@ -53,6 +62,8 @@ export const palette = {
     neutral700: "#404040",
     neutral800: "#262626",
     neutral900: "#171717",
+
+    // Reds
 
     red50: "#fef2f2",
     red100: "#fee2e2",
@@ -65,6 +76,8 @@ export const palette = {
     red800: "#991b1b",
     red900: "#7f1d1d",
 
+    // oranges
+
     orange50: "#fff7ed",
     orange100: "#ffedd5",
     orange200: "#fed7aa",
@@ -75,6 +88,8 @@ export const palette = {
     orange700: "#c2410c",
     orange800: "#9a3412",
     orange900: "#7c2d12",
+
+    // ambers
 
     amber50: "#fffbeb",
     amber100: "#fef3c7",
@@ -87,6 +102,7 @@ export const palette = {
     amber800: "#92400e",
     amber900: "#78350f",
 
+    // green
     green50: "#f0fdf4",
     green100: "#dcfce7",
     green200: "#bbf7d0",
@@ -107,18 +123,18 @@ export const palette = {
     sky600: "#0284c7",
     sky700: "#0369a1",
     sky800: "#075985",
-    sky900: "#0c4e6e",
+    sky900: "#0c4a6e",
 
-    blue50: "#eff6ff",
-    blue100: "#dbeafe",
-    blue200: "#bfdbfe",
-    blue300: "#93c5fd",
-    blue400: "#60a5fa",
-    blue500: "#007aff",
-    blue600: "#2563eb",
-    blue700: "#1d4ed8",
-    blue800: "#1e40af",
-    blue900: "#1e3a8a",
+    blu50: "#eff6ff",
+    blu100: "#dbeafe",
+    blu200: "#bfdbfe",
+    blu300: "#93c5fd",
+    blu400: "#60a5fa",
+    blu500: "#007AFF",
+    blu600: "#2563eb",
+    blu700: "#1d4ed8",
+    blu800: "#1e40af",
+    blu900: "#1e3a8a",
 
     violet50: "#eef2ff",
     violet100: "#e0e7ff",
@@ -178,70 +194,18 @@ export const palette = {
 
 export const colors = {
     white: palette.white,
-    primary: palette.primary,
+    lightGray: palette.lightGray,
     gray550: palette.gray550,
     gray650: palette.gray650,
     gray4: palette.gray4,
+    gray5: palette.gray5,
+    gray8: palette.gray8,
     gray9: palette.gray9,
     transparent: palette.transparent,
     grey: palette.grey,
+    primary: palette.primary,
 
-    slate50: palette.slate50,
-    slate100: palette.slate100,
-    slate200: palette.slate200,
-    slate300: palette.slate300,
-    slate400: palette.slate400,
-    slate500: palette.slate500,
-    slate600: palette.slate600,
-    slate700: palette.slate700,
-    slate800: palette.slate800,
-    slate900: palette.slate900,
-
-    gray50: palette.gray50,
-    gray100: palette.gray100,
-    gray200: palette.gray200,
-    gray250: palette.gray250,
-    gray300: palette.gray300,
-    gray400: palette.gray400,
-    gray500: palette.gray500,
-    gray600: palette.gray600,
-    gray700: palette.gray700,
-    gray800: palette.gray800,
-    gray900: palette.gray900,
-
-    zinc50: palette.zinc50,
-    zinc100: palette.zinc100,
-    zinc200: palette.zinc200,
-    zinc300: palette.zinc300,
-    zinc400: palette.zinc400,
-    zinc500: palette.zinc500,
-    zinc550: palette.zinc550,
-    zinc600: palette.zinc600,
-    zinc700: palette.zinc700,
-    zinc800: palette.zinc800,
-    zinc900: palette.zinc900,
-
-    neutral50: palette.neutral50,
-    neutral100: palette.neutral100,
-    neutral200: palette.neutral200,
-    neutral300: palette.neutral300,
-    neutral400: palette.neutral400,
-    neutral500: palette.neutral500,
-    neutral600: palette.neutral600,
-    neutral700: palette.neutral700,
-    neutral800: palette.neutral800,
-    neutral900: palette.neutral900,
-
-    red50: palette.red50,
-    red100: palette.red100,
-    red200: palette.red200,
-    red300: palette.red300,
-    red400: palette.red400,
-    red500: palette.red500,
-    red600: palette.red600,
-    red700: palette.red700,
-    red800: palette.red800,
-    red900: palette.red900,
+    /**tailwind colors */
 
     orange50: palette.orange50,
     orange100: palette.orange100,
@@ -254,9 +218,73 @@ export const colors = {
     orange800: palette.orange800,
     orange900: palette.orange900,
 
+    // Ambers
     amber50: palette.amber50,
     amber100: palette.amber100,
     amber200: palette.amber200,
+
+    // grays
+
+    gray100: palette.gray100,
+    gray200: palette.gray200,
+    gray250: palette.gray250,
+    gray300: palette.gray300,
+    gray400: palette.gray400,
+    gray500: palette.gray500,
+    gray600: palette.gray600,
+    gray700: palette.gray700,
+    gray800: palette.gray800,
+    gray900: palette.gray900,
+
+    // slate
+
+    slate100: palette.slate100,
+    slate200: palette.slate200,
+    slate300: palette.slate300,
+    slate400: palette.slate400,
+    slate500: palette.slate500,
+    slate600: palette.slate600,
+    slate700: palette.slate700,
+    slate800: palette.slate800,
+    slate900: palette.slate900,
+
+    // zinc
+
+    zinc100: palette.zinc100,
+    zinc200: palette.zinc200,
+    zinc300: palette.zinc300,
+    zinc400: palette.zinc400,
+    zinc500: palette.zinc500,
+    zinc550: palette.zinc550,
+    zinc600: palette.zinc600,
+    zinc700: palette.zinc700,
+    zinc800: palette.zinc800,
+    zinc900: palette.zinc900,
+
+    // neutral
+
+    neutral100: palette.neutral100,
+    neutral200: palette.neutral200,
+    neutral300: palette.neutral300,
+    neutral400: palette.neutral400,
+    neutral500: palette.neutral500,
+    neutral600: palette.neutral600,
+    neutral700: palette.neutral700,
+    neutral800: palette.neutral800,
+    neutral900: palette.neutral900,
+
+    // Reds
+    red50: palette.red50,
+    red100: palette.red100,
+    red200: palette.red200,
+    red300: palette.red300,
+    red400: palette.red400,
+    red500: palette.red500,
+    red600: palette.red600,
+    red700: palette.red700,
+    red800: palette.red800,
+    red900: palette.red900,
+
     amber300: palette.amber300,
     amber400: palette.amber400,
     amber500: palette.amber500,
@@ -265,6 +293,7 @@ export const colors = {
     amber800: palette.amber800,
     amber900: palette.amber900,
 
+    // Green
     green50: palette.green50,
     green100: palette.green100,
     green200: palette.green200,
@@ -287,16 +316,16 @@ export const colors = {
     sky800: palette.sky800,
     sky900: palette.sky900,
 
-    blue50: palette.blue50,
-    blue100: palette.blue100,
-    blue200: palette.blue200,
-    blue300: palette.blue300,
-    blue400: palette.blue400,
-    blue500: palette.blue500,
-    blue600: palette.blue600,
-    blue700: palette.blue700,
-    blue800: palette.blue800,
-    blue900: palette.blue900,
+    blu50: palette.blu50,
+    blu100: palette.blu100,
+    blu200: palette.blu200,
+    blu300: palette.blu300,
+    blu400: palette.blu400,
+    blu500: palette.blu500,
+    blu600: palette.blu600,
+    blu700: palette.blu700,
+    blu800: palette.blu800,
+    blu900: palette.blu900,
 
     violet50: palette.violet50,
     violet100: palette.violet100,
