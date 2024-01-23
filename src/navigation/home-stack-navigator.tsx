@@ -1,15 +1,28 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {HomeStackParamList} from "./types";
-import WelcomeScreen from "../screens/welcome-screen";
-import SignInScreen from "../screens/sign-in-screen";
-import SignUpScreen from "../screens/sing-up-screen";
+import EditTaskScreen from "../screens/edit-task";
+import HomeScreen from "../screens/home-screen";
+import React from "react";
 
 const Stack = createNativeStackNavigator<HomeStackParamList>()
 
 const HomeStackNavigator = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name={'Home'} component={WelcomeScreen}/>
+            <Stack.Screen
+                name={'Home'}
+                component={HomeScreen}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name={'EditTask'}
+                component={EditTaskScreen}
+                options={{
+                    headerShown: false,
+                }}
+            />
         </Stack.Navigator>
     );
 };

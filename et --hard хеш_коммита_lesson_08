@@ -1,0 +1,38 @@
+[33mcommit 39f90617404d1964899e94f703d5c1e6f31f25c2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 359d71c ebcc7eb
+Author: Lebenkov Denis <sabzz1ro3@mail.ru>
+Date:   Sun Jan 21 23:52:19 2024 +0300
+
+    Merge pull request #1 from snuffdrunkk/feature
+    
+    Lesson 8
+
+[33mcommit ebcc7ebf4135b2f6d4f8e84f27d7e4f1d55fbbd1[m[33m ([m[1;31morigin/feature[m[33m)[m
+Author: Lebenkov Denis <lebenkov.denis@mail.ru>
+Date:   Sun Jan 21 23:45:57 2024 +0300
+
+     lesson 08, time 19:52
+
+[33mcommit 359d71c5c4e14f5a8912f3bfe845e1170e81471a[m
+Author: Titov Egor <etvi2004@gmail.com.com>
+Date:   Sun Jan 21 22:50:54 2024 +0300
+
+    button
+
+[33mcommit 3afd6021894050671e469c29007edbed8373a8fb[m
+Author: Titov Egor <etvi2004@gmail.com.com>
+Date:   Sat Jan 20 11:54:02 2024 +0300
+
+    colors-ready
+
+[33mcommit 162dee0b824db1719d2b2c2b64a4aa005fd059b3[m
+Author: Titov Egor <etvi2004@gmail.com.com>
+Date:   Fri Jan 19 18:02:34 2024 +0300
+
+    color
+
+[33mcommit a4541fec52b82dbd55890647983a648fdff1cc55[m
+Author: Titov Egor <etvi2004@gmail.com.com>
+Date:   Fri Jan 19 17:01:12 2024 +0300
+
+    start coding
