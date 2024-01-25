@@ -6,7 +6,7 @@ type InputProps = {
     error?: undefined
 } & TextInputProps
 
-const Input = ({label}: InputProps) => {
+const Input = ({label, placeholder}: InputProps) => {
     return (
         <Box flexDirection={"column"}>
             <Text variant={"textXs"} textTransform={"uppercase"} mb={"3"} fontWeight={"700"}>{label}</Text>
@@ -17,7 +17,7 @@ const Input = ({label}: InputProps) => {
                     borderColor: theme.colors.grey,
                     borderRadius: theme.borderRadii["rounded-7x1"],
                 }}
-                placeholder={"Email"}
+                placeholder={placeholder}
             />
         </Box>
     );

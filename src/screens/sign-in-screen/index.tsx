@@ -18,9 +18,9 @@ const SignInScreen = () => {
             <Box flex={1} px={"5.5"} mt={"13"}>
                 <Text variant={"textXl"} fontWeight={"700"}>Welcome back</Text>
                 <Box mb={"6"}></Box>
-                <Input label={"Email"}/>
+                <Input label={"Email"} placeholder={"Email"}/>
                 <Box mb={"6"}></Box>
-                <Input label={"Password"}/>
+                <Input label={"Password"} placeholder={"Password"}/>
                 <Box mt={"4"}/>
                 <Pressable onPress={navigateToSignUpScreen}>
                     <Text color={"primary"} textAlign={"right"}>Forgot password?</Text>
